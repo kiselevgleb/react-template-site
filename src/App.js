@@ -2,9 +2,7 @@
 
 import React from 'react';
 import './App.css';
-import News from './News';
-import Curs from './Curs';
-import Menu from './Menu';
+import Item from './Item';
 import Modul from './Modul';
 
 function App() {
@@ -23,13 +21,13 @@ function App() {
     <div className="App">
       <div className="left-block-two">
         <h3>Сейчас в СМИ</h3>
-        <News news={news} /> 
+        <Item item={news} style=""/> 
         {/* Вывод списка новостей */}
-        <Curs curs={curs} /> 
+        <Item item={curs} style="li"/> 
         {/* Вывод курсов валют */}
       </div>
       <div className="menu">
-        <Menu menu={menu} /> 
+        <Item item={menu} style="li"/> 
         {/* Вывод меню */}
       </div>
       <div className="search">

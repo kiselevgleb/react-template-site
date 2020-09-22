@@ -92,23 +92,13 @@ div.inline {
   height: 100%;
   /* Высота блока */
 }
-/* .curs {
-  display: inline-block;
-} */
-.li-curs {
+.li {
   display: inline-block;
   margin-right: 20px;
 }
 .menu {
   text-align: left;
   /* display: inline-block; */
-  margin-right: 20px;
-}
-.ul-menu {
-  margin-bottom: 0px;
-}
-.li-menu {
-  display: inline-block;
   margin-right: 20px;
 }
 .logo {
