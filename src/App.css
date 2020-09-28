@@ -43,8 +43,8 @@ html, body {
 }
 
 .main {
-  text-align: left;
-  margin: 0 auto;
+  text-align: left!important;
+  /* margin: 0 auto; */
   /* Центрируем блоки */
   width: 100%;
   /* Задаем ширину 100%, чтобы сделать ее резиновой */

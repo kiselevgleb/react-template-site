@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import './App.css';
 import Item from './Item';
@@ -12,10 +10,6 @@ function App() {
   let modulesLeft = [{ title: 'Погода', p1: '+17' }, { title: 'Посещаемое', p1: 'Недвижимость', p2: 'Маркет', p3: 'Авто' }];
   let modulesCenter = [{ title: 'Карта', p1: 'Расписание' }, { title: 'Телепрограмма', p1: 'ТНТ', p2: 'Карусель', p3: 'Первый' }];
   let modulesRight = [{ title: 'Эфир', p1: 'Успех', p2: 'TV' }];
-
-  const listModules = modulesLeft.map((mod) => <div className="modules"><h3>{mod.title}</h3><p>{mod.p1}</p><p>{mod.p2}</p><p>{mod.p3}</p></div>);
-  const сenterModules = modulesCenter.map((mod) => <div className="modules"><h3>{mod.title}</h3><p>{mod.p1}</p><p>{mod.p2}</p><p>{mod.p3}</p></div>);
-  const rightModules = modulesRight.map((mod) => <div className="modules"><h3>{mod.title}</h3><p>{mod.p1}</p><p>{mod.p2}</p><p>{mod.p3}</p></div>);
 
   return (
     <div className="App">
@@ -40,15 +34,15 @@ function App() {
       </div>
       <div className="main inline">
         <div className="left-block">
-          <Modul>{listModules}</Modul> 
+          <Modul mod={modulesLeft}></Modul> 
           {/* Вывод модуля "Погода" и "Посещаемое" */}
         </div>
         <div className="content">
-          <Modul>{сenterModules}</Modul> 
+          <Modul mod={modulesCenter}></Modul> 
           {/* Вывод модуля "Карта" и "Телепрограмма" */}
         </div>
         <div className="right-block">
-          <Modul>{rightModules}</Modul> 
+          <Modul mod={modulesRight}></Modul> 
           {/* Вывод модуля "Эфир" */}
         </div>
       </div>
